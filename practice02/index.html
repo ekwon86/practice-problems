@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Total Reverse</title>
+</head>
+<body>
+    <script>
+        var myArray = ['hello', 45, 'Bob', 'what', '23'];
+        /*function arrayReverse() {
+            myArray.reverse();
+        }
+        arrayReverse();
+        console.log(myArray);*/
+        function arrayReverse(myArray) {
+            var counter = myArray.length -1;
+            for (var i = 0; i < myArray.length; i++) {
+
+                var temp = myArray[i];
+                myArray[i] = myArray[counter];
+                counter--;
+
+            }
+            return myArray;
+        }
+        console.log(arrayReverse(myArray));
+
+    </script>
+</body>
+</html>
