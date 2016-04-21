@@ -7,17 +7,13 @@
 <body>
     <script>
         var myArray = ['hello', 45, 'Bob', 'what', '23'];
-//        function arrayReverse() {
-//            myArray.reverse();
-//        }
-//        arrayReverse();
-//        console.log(myArray);
         function arrayReverse(myArray) {
+            var newArray = [];
             for(var i = myArray.length-1; i>=0; i--) {
-                console.log(myArray[i]);
+                newArray.push(myArray[i]);
             }
+            return newArray;
         }
-
         document.write(arrayReverse(myArray));
 
     </script>
