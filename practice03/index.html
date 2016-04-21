@@ -6,11 +6,25 @@
 </head>
 <body>
     <script>
-        var myArray = [1, 'Good Evening', false, 2, 'Good Morning', 3, true, 'Hello', 4, 10];
+        var myArray = [1, 'Good Evening', false, 2, 'Good Morning', 4, true, 'Hello', 4, 10];
 
         function groupArray() {
-
+            var array1 = [];
+            var array2 = [];
+            var array3 = [];
+            var array4 = [];
+            for (i=0; i<=myArray.length-1; i++) {
+                if (myArray[i] == "string") {
+                    array1.push(myArray[i]);
+                } else if (myArray[i] == "boolean") {
+                    array2.push(myArray[i]);
+                } else {
+                    array3.push(myArray[i]);
+                }
+            }
+            return array4.push(array1, array2, array3);
         }
+        console.log(groupArray(myArray));
 
     </script>
 </body>
