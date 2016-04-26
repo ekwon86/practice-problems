@@ -7,17 +7,18 @@
 <body>
     <script>
         var myArray = [1, 'Good Evening', false, 2, 'Good Morning', 4, true, 'Hello', 8, 10];
-
-        function groupArray() {
+        function groupArray(myArray) {
             var array1 = [];
-            var array2 = [];
-            var array3 = [];
-            var array4 = [];
+//            var array2 = [];
+//            var array3 = [];
+//            var array4 = [];
             for (i=0; i<=myArray.length-1; i++) {
                 if (myArray[i] == "string") {
                     array1.push(myArray[i]);
-                }}}
-        console.log(array1);
+                }
+            }
+        }
+
 
 //                else if (myArray[i] == "boolean") {
 //                    array2.push(myArray[i]);
