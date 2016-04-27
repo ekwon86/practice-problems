@@ -6,16 +6,19 @@
 <script>
 
     function printBuzz() {
-        var numbers = [];
         for(var i=0; i<=100; i++) {
             if(i%3 === 0){
-                numbers.push('Fizz');
+                console.log('Fizz' + i);
             } else if (i%3 === 0 && i%5 === 0) {
-                numbers.push('FizzBuzz');
+                console.log('FizzBuzz' + i);
+            } else if (i%5 === 0){
+                console.log('buzz' + i);
+            } else {
+                console.log(i);
             }
         }
     }
-    console.log(printBuzz());
+    printBuzz();
 
 </script>
 </head>
