@@ -2,34 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>One to Multi</title>
+    <title>Practice 03 - One to Multi</title>
 </head>
 <body>
     <script>
         var myArray = [1, 'Good Evening', false, 2, 'Good Morning', 4, true, 'Hello', 8, 10];
-        function groupArray(myArray) {
-            var array1 = [];
-//            var array2 = [];
-//            var array3 = [];
-//            var array4 = [];
-            for (i=0; i<=myArray.length-1; i++) {
-                if (myArray[i] == "string") {
-                    array1.push(myArray[i]);
-                }
+
+        function groupArray() {
+            var dataTypeObject = {
+                    'boolean': [],
+                    'string': [],
+                    'number': []
             }
         }
+            for (var i=0; i<=myArray.length-1; i++) {
+                    //if boolean, push into boolean array of dataTypeObject
+                if (typeof myArray[i] == 'boolean') {
+                    dataTypeObject.boolean.push();
+                    //console.log('contents of boolean array is ' + myArray[i]);
+                    //if string, push into the string array of dataTypeObject
+                } else if (typeof myArray[i] == 'string') {
+                    dataTypeObject.string.push();
+                    //console.log('contents of string array is ' + myArray[i]);
+                    //if number, push into the number array of dataTypeObject
+                } else {
+                    dataTypeObject.number.push();
+                    //end if
+                }
 
+            }//end of loop
 
-//                else if (myArray[i] == "boolean") {
-//                    array2.push(myArray[i]);
-//                } else {
-//                    array3.push(myArray[i]);
-//                }
-//            }
-//            return array4.push(array1, array2, array3);
-//        }
-//        console.log(groupArray(myArray));
-
+        //return the dataTypeObject
     </script>
 </body>
 </html>
+
+<!--loop through the array-->
+<!--check datatype to see if it is a boolean, string, or number-->
