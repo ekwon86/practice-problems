@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Practice 02 - FizzBuzz</title>
-    <script>
-        function printBuzz() {
-            for(i=0; i<=100; i++) {
-                if(i%3==0){
-                    console.log("Fizz");
-                } else if (i%3==0 && i%5==0) {
-                    console.log("FizzBuzz");
-                }
-            }return printBuzz();
+<meta charset="UTF-8">
+<title>Practice 05 - FizzBuzz</title>
+<script>
+
+    function printBuzz() {
+        var numbers = [];
+        for(var i=0; i<=100; i++) {
+            if(i%3 === 0){
+                numbers.push('Fizz');
+            } else if (i%3 === 0 && i%5 === 0) {
+                numbers.push('FizzBuzz');
+            }
         }
-    </script>
+    }
+    console.log(printBuzz());
+
+</script>
 </head>
 <body>
 
