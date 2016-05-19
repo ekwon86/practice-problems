@@ -5,20 +5,18 @@
     <title>practice30 Random Number or Array Element</title>
 </head>
 <script>
-//    function random_range(start_num, end_num) {
-//        return Math.floor(Math.random() * (end_num - start_num) + start_num);
-//    }
-//    document.write(random_range(11, 44));
-
-var myArray = ['a', 'b', 'c', 'd', 'e'];
-
-    function random_range() {
-        var random_index = Math.floor(Math.random() * myArray.length);
-        return myArray[random_index];
+    function random_range(start_num, end_num) {
+        if (Array.isArray) {
+            var random_index = Math.floor(Math.random() * start_num.length);
+            return start_num[random_index];
+        }
+        else {
+            return Math.floor(Math.random() * (end_num - start_num) + start_num);
+        }
     }
 
-document.write(random_range(myArray));
-
+    document.write(random_range(['a', 'b', 'c', 'd', 'e']));
+//    document.write(random_range(1,10));
 </script>
 <body>
 
