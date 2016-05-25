@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bigger Words</title>
+    <script>
+        var myArray = ['banana', 'baby', 'fish', 'dog', 'cat', 'hippopotamus', 'trolololo'];
+        var newArray = [];
+
+        function bigger_words(string, array) {
+            for (var i = 0; i < array.length; i++) {
+                if (array[i].length > string.length) {
+                    newArray.push(array[i]);
+                }
+            }
+        }
+        bigger_words('cat', myArray);
+        console.log(newArray);
+    </script>
+</head>
+<body>
+
+</body>
+</html>
